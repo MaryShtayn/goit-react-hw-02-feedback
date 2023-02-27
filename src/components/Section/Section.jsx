@@ -25,13 +25,11 @@ export class Section extends Component {
 
   countPositiveFeedbackPercentage = () => {
     const { good } = this.state;
-    return Math.round((good * 100) / this.countTotalFeedback() || 0);
+    return Math.round((good * 100) / this.countTotalFeedback()) || 0;
   };
 
   render() {
     const { good, neutral, bad } = this.state;
-    const total = this.countTotalFeedback();
-    const positivePercentage = this.countPositiveFeedbackPercentage();
     const title = 'Please leave feedback';
     return (
       <div>

@@ -18,10 +18,7 @@ export function Statistics({ good, neutral, bad, total, positivePercentage }) {
         <li className="statistics__item" total={total}>
           Total: {total}
         </li>
-        <li
-          className="statistics__item"
-          positivePercentage={positivePercentage}
-        >
+        <li className="statistics__item">
           Positive feedback: {positivePercentage}%
         </li>
       </ul>
