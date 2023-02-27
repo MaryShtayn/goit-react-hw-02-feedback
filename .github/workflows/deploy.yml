@@ -16,7 +16,7 @@ jobs:
           npm install
           npm run lint:js
           npm run build
-          CI = false npm run build
+          CI=false npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
