@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { Section } from './Section/Section';
 export const App = () => {
   return (
@@ -8,11 +8,11 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 36,
         color: '#010101',
       }}
     >
-      <Section title="Please leave feedback"></Section>
+      <Section title="Please leave feedback">{Children}</Section>
     </div>
   );
 };
